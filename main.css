@@ -84,6 +84,9 @@ body {
     .btn {
         width: 30%;
     }
+    #right-menubar p {
+        margin: 15px 32px;
+    }
 }
 
 /* Header */
@@ -100,7 +103,7 @@ body {
     color: #4CAF50;
 }
 
-/* Menu bar */
+/* Sidebar - menu ngang */
 #sidebar {
     background-color: #5F5F5F;
     height: auto;
@@ -128,11 +131,15 @@ body {
     background-color: #000;
     transition: .3s;
 }
+
+/* đính sidebar luôn hiện khi cuộn chuột */
 .sticky {
     position: fixed;
     top: 0;
     width: 100%;
 }
+
+/* cột bên trái, ẩn khi weight < 992px */
 #left-menubar {
     margin: 0;
     padding: 0;
@@ -159,19 +166,27 @@ body {
 #main {
     height: auto;
     display: block;
+    /* cái này quan trọng, nội dung chính luôn chú ý để line-height: 1.5; cho dễ đọc */
+    line-height: 1.5;
 }
-#main h1 {
-    display: block;
+#main h2 {
+    /* display: block; */
     color: white;
     background-color: #4CAF50;
     text-align: center;
     padding: 10px 32px;
 }
+#main p {
+    margin: 10px;
+}
+
+/* Hiển thị bài học dạng lưới */
 .content {
     display: block;
     margin: 15px;
 }
 .btn {
+    background-color: #e5e5e5;
     border: 1px solid #4CAF50;
     border-radius: 3px;
     padding: 10px;
@@ -183,22 +198,75 @@ body {
     cursor: pointer;
     transition: .3s;
 }
+
+/* Hiển thị bài học dạng danh sách */
+.lst {
+    margin: 15px auto;
+    max-width: 500px;
+    width: 75%;
+    background-color: #FFF;
+    padding: 0;
+    height: 400px;
+    overflow: scroll;
+    border: 1px solid #4CAF50;
+}
+.lst ul {
+    list-style-type: none;
+}
+.lst li {
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #4CAF50;
+    border-radius: 3px;
+}
+.lst li:hover {
+    box-shadow: 0 -2px 7px #4CAF50, 0 2px 7px #4CAF50, -2px 0 7px #4CAF50, 2px 0 7px #4CAF50;
+    background-color: #FFF;
+    transition: .2s;
+}
+.lst a {
+    display: block;
+    text-decoration: none;
+    font-size: 16px;
+    color: #000;
+}
+
+/* cột bên phải */
 #right-menubar {
     height: auto;
-    border: 1px solid greenyellow;
 }
+#right-menubar h3 {
+    display: block;
+    color: #FFF;
+    background-color: #3366FF;
+    text-align: center;
+    padding: 5px 0;
+}
+#right-menubar p {
+    text-align: justify;
+    font-size: 15px;
+    padding: 3px;
+}
+
+/* footer bar */
 .footer {
-    border-top: 1px solid #666666;
-    color: #666666;
+    color: #FFF;
+    background-color: #616161;
+    font-size: 12px;
     text-align: center;
     height: auto;
     padding: 5px 0;
 }
+.footer p {
+    margin: 5px 25px;
+}
 .footer a {
     text-align: center;
     text-decoration: none;
-    color: #666666;
+    color: #FFF;
+    background-color: #616161;
 }
 .footer a:hover {
-    color: #0033FF;
+    color: #4CAF50;
 }
