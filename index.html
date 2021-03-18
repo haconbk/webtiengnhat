@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tiếng Nhật cho mọi người</title>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="main.css">
     <script type="text/javascript" src="main.js"></script>
@@ -16,8 +17,13 @@
     </div>
     <div class="row">
         <!-- menu bar, fixed -->
-        <div id="sidebar">
+        <div class="sidebar" id="mySideBar">
             <ul>
+                <li>
+                    <a href="javascript:void(0);" class="icon" onclick="showLeftMenuBar()">
+                    <i class="fa fa-bars"></i>
+                    </a>
+                </li>
                 <li><a href="" class="active">Trang chủ</a></li>
                 <li><a href="">Blog</a></li>
                 <li><a href="">Giới thiệu</a></li>
@@ -26,8 +32,7 @@
         </div>
 
         <div class="col-2">
-            <div id="left-menubar">
-                <h2></h2>
+            <div class="left-menubar" id="myLeftSideBar">
                 <a href="#">MINA NO NIHONGO</a>
                 <a href="#">SƠ CẤP</a>
                 <a href="#">JLPT N5</a>
@@ -42,7 +47,6 @@
                 <p>Shin Nihongo 500 câu hỏi N4-N5 là giáo trình dành cho người có trình độ dự thi kỳ thi năng lực tiếng Nhật N4-N5.<br>
                 Bạn có thể học 20 phút mỗi ngày trong vòng 4 tuần.<br>
                 Trình độ tổng hợp của bạn sẽ được nâng lên thông qua việc học chữ, từ vựng, ngữ pháp một cách cân đối.</p>
-                <p>この<ruby>町<rt>まち</rt></ruby>の<u>人口</u>はどのぐらいですか</p>
                 <div class="lst">
                     <ul>
                         <li><a href="#">tuần 1 ngày 1</a></li>

@@ -78,14 +78,32 @@ body {
     }
 }
 @media screen and (max-width: 992px) {
-    #left-menubar {
-        display: none;
-    }
     .btn {
         width: 30%;
     }
     #right-menubar p {
         margin: 15px 32px;
+    }
+    .sidebar a.icon {
+        float: left;
+        display: block;
+    }
+    .left-menubar {
+        display: none;
+    }
+    .left-menubar.responsive {
+        /* display: block; */
+        position: relative;
+    }
+    .left-menubar.responsive a.icon {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .left-menubar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
     }
 }
 
@@ -104,32 +122,35 @@ body {
 }
 
 /* Sidebar - menu ngang */
-#sidebar {
+.sidebar {
     background-color: #5F5F5F;
     height: auto;
 }
-#sidebar ul {
+.sidebar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
-#sidebar li {
+.sidebar li {
     float: left;
 }
-#sidebar a {
+.sidebar a {
     text-align: center;
     text-decoration: none;
     display: block;
     padding: 14px 16px;
     color: white;
 }
-#sidebar a.active {
+.sidebar a.active {
     background-color: #4CAF50;
 }
-#sidebar a:hover:not(.active) {
+.sidebar a:hover:not(.active) {
     background-color: #000;
     transition: .3s;
+}
+.sidebar .icon {
+    display: none;
 }
 
 /* đính sidebar luôn hiện khi cuộn chuột */
@@ -140,37 +161,42 @@ body {
 }
 
 /* cột bên trái, ẩn khi weight < 992px */
-#left-menubar {
+.left-menubar {
     margin: 0;
     padding: 0;
 }
-#left-menubar h2 {
+.left-menubar h2 {
     text-align: center;
     border-bottom: 2px solid #4CAF50;
     padding: 15px 32px;
 }
-#left-menubar a {
-    color: rgb(130, 134, 136);
+.left-menubar a {
+    /* color: rgb(130, 134, 136); */
+    color: #000;
     display: block;
     text-align: center;
     text-decoration: none;
-    font-size: 16px;
-    padding: 10px 16px;
+    font-size: 12px;
+    padding: 5px;
+    margin: 0;
     border-bottom: 1px solid #4CAF50;
 }
-#left-menubar a:hover {
-    color: #4CAF50;
+.left-menubar a:hover {
+    /* color: #4CAF50; */
     background-color: #CCC;
     transition: .3s;
 }
+
+/* nội dung chính */
 #main {
     height: auto;
     display: block;
+    background-color: white;
     /* cái này quan trọng, nội dung chính luôn chú ý để line-height: 1.5; cho dễ đọc */
     line-height: 1.5;
+    padding: 10px;
 }
 #main h2 {
-    /* display: block; */
     color: white;
     background-color: #4CAF50;
     text-align: center;
@@ -203,10 +229,9 @@ body {
 .lst {
     margin: 15px auto;
     max-width: 500px;
-    width: 75%;
-    background-color: #FFF;
-    padding: 0;
-    height: 400px;
+    width: 90%;
+    padding: 15px 0;
+    height: 500px;
     overflow: scroll;
     border: 1px solid #4CAF50;
 }
@@ -218,11 +243,10 @@ body {
     padding: 5px;
     text-align: center;
     border: 1px solid #4CAF50;
-    border-radius: 3px;
+    border-radius: 5px;
 }
 .lst li:hover {
     box-shadow: 0 -2px 7px #4CAF50, 0 2px 7px #4CAF50, -2px 0 7px #4CAF50, 2px 0 7px #4CAF50;
-    background-color: #FFF;
     transition: .2s;
 }
 .lst a {

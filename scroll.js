@@ -1,8 +1,17 @@
+function showLeftMenuBar() {
+  var x = document.getElementById("myLeftSideBar");
+  if (x.className === "left-menubar") {
+    x.className += " responsive";
+  } else {
+    x.className = "left-menubar";
+  }
+}
+
 // When the user scrolls the page, execute myFunction
 window.onscroll = function() {myFunction()};
 
 // Get the navbar
-var sidebar = document.getElementById("sidebar");
+var sidebar = document.getElementById("mySideBar");
 
 // Get the offset position of the navbar
 var sticky = sidebar.offsetTop;
