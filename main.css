@@ -174,9 +174,11 @@ body {
     border-bottom: 1px solid #DBDFDF;
 }
 .left-menubar a:hover {
-    color: #4CAF50;
+    /* color: #4CAF50; */
     /* background-color: #CCC; */
     transition: .3s;
+    color: white;
+    text-shadow: 0 -2px 7px #4CAF50, 0 2px 7px #4CAF50, -2px 0 7px #4CAF50, 2px 0 7px #4CAF50;
 }
 
 /* nội dung chính */
