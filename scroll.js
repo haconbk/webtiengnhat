@@ -1,4 +1,8 @@
-function showLeftMenuBar() {
+function openNav() {
+  // document.getElementById("myLeftSideBar").display.width = "250px";
+  document.getElementById("myLeftSideBar").position = "relative";
+}
+function hapm() {
   var x = document.getElementById("myLeftSideBar");
   if (x.className === "left-menubar") {
     x.className += " responsive";
@@ -6,7 +10,6 @@ function showLeftMenuBar() {
     x.className = "left-menubar";
   }
 }
-
 // When the user scrolls the page, execute myFunction
 window.onscroll = function() {myFunction()};
 
