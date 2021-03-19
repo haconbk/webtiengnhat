@@ -1,9 +1,6 @@
-function openNav() {
-  // document.getElementById("myLeftSideBar").display.width = "250px";
-  document.getElementById("myLeftSideBar").position = "relative";
-}
-function hapm() {
+function openLeftMenu() {
   var x = document.getElementById("myLeftSideBar");
+  var y = window.pageYOffset;
   if (x.className === "left-menubar") {
     x.className += " responsive";
   } else {
