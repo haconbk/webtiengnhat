@@ -93,16 +93,13 @@ body {
         visibility: hidden;
     }
     .left-menubar.responsive {
-        /* position: absolute; */
+        position: fixed;
         visibility: visible;
-        /* float: left;
-        left: auto; */
-        left: auto;
+        left: 0;
         top: auto;
         transition: .5s;
         width: 200px;
-        height: 100%;
-        background-color: rgba(255,255,255,0.7);
+        background-color: rgb(255,255,255);
     }
 }
 
@@ -119,7 +116,9 @@ body {
 .header a:hover {
     color: #4CAF50;
 }
-
+.sticky1 {
+    top: 50px;
+}
 /* Sidebar - menu ngang */
 .sidebar {
     background-color: #5F5F5F;
