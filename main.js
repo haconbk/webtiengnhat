@@ -5,14 +5,27 @@ function openLeftMenu() {
   } else {
     x.className = "left-menubar";
   }
+  var y = document.getElementById("test1");
+  if (y.className === "close-btn") {
+    y.className += " close-btn-test";
+  } else {
+    y.className = "close-btn";
+  }
 }
 
 function closeLeftMenu() {
   var x = document.getElementById("myLeftSideBar");
   if (x.className === "left-menubar") {
     x.className -= " responsive";
+    
   } else {
     x.className = "left-menubar";
+  }
+  var y = document.getElementById("test1");
+  if (y.className === "close-btn") {
+    y.className -= " close-btn-test";
+  } else {
+    y.className = "close-btn";
   }
 }
 // function closeLeftMenu() {

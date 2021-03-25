@@ -90,7 +90,7 @@
         visibility: hidden;
     }
     .left-menubar a {
-        color: #FFF;
+        margin-left: 30px;
     }
     .left-menubar.responsive {
         position: fixed;
@@ -99,9 +99,20 @@
         top: 0;
         z-index: 1;
         transition: .3s;
-        width: 200px;
+        width: 250px;
         height: 100%;
         background-color: #FFF;
+    }
+    .close-btn.close-btn-test {
+        visibility: visible;
+        z-index: 1;
+        padding: 5px 0;
+        font-size: 30px;
+        border: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        margin-left: 5px;
     }
 }
 
@@ -176,13 +187,16 @@
     font-size: 12px;
     padding: 7px;
     margin: 0;
+    /* margin-left: 30px; */
     border-bottom: 1px solid rgba(51, 102, 255, 0.3);
 }
 .left-menubar a:hover {
     /* transition: .3s; */
     text-shadow: 0 -2px 7px rgba(51, 102, 255, 0.3), 0 2px 7px rgba(51, 102, 255, 0.3), -2px 0 7px rgba(51, 102, 255, 0.3), 2px 0 7px rgba(51, 102, 255, 0.3);
 }
-
+.close-btn {
+    visibility: hidden;
+}
 /* nội dung chính */
 #main {
     height: auto;
