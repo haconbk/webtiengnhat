@@ -1,12 +1,23 @@
 function openLeftMenu() {
   var x = document.getElementById("myLeftSideBar");
-  var y = window.pageYOffset;
   if (x.className === "left-menubar") {
     x.className += " responsive";
   } else {
     x.className = "left-menubar";
   }
 }
+
+function closeLeftMenu() {
+  var x = document.getElementById("myLeftSideBar");
+  if (x.className === "left-menubar") {
+    x.className -= " responsive";
+  } else {
+    x.className = "left-menubar";
+  }
+}
+// function closeLeftMenu() {
+//   document.getElementById("myLeftSideBar").style.width = "0";
+// }
 // When the user scrolls the page, execute fixedMenu
 window.onscroll = function() {fixedMenu()};
 // Get the navbar

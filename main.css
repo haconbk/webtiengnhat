@@ -4,9 +4,6 @@
     padding: 0;
     font-family: "Open Sans", sans-serif;
 }
-body {
-    /* background-color: #e5e5e5; */
-}
 .row::after {
     content: "";
     clear: both;
@@ -92,14 +89,19 @@ body {
         position: absolute;
         visibility: hidden;
     }
+    .left-menubar a {
+        color: #FFF;
+    }
     .left-menubar.responsive {
         position: fixed;
         visibility: visible;
         left: 0;
-        top: auto;
-        transition: .5s;
+        top: 0;
+        z-index: 1;
+        transition: .3s;
         width: 200px;
-        background-color: rgb(255,255,255);
+        height: 100%;
+        background-color: #FFF;
     }
 }
 
@@ -115,9 +117,6 @@ body {
 }
 .header a:hover {
     color: #4CAF50;
-}
-.sticky1 {
-    top: 100px;
 }
 /* Sidebar - menu ngang */
 .sidebar {
@@ -162,25 +161,26 @@ body {
 .left-menubar {
     margin: 0;
     padding: 0;
+    overflow: scroll;
+}
+.left-menubar h4 {
+    text-align: center;
+    padding: 5px 0;
 }
 .left-menubar a {
-    /* color: rgb(130, 134, 136); */
     font-weight: bold;
     color: #000;
     display: block;
-    text-align: center;
+    text-align: left;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 12px;
     padding: 7px;
     margin: 0;
-    border-bottom: 1px solid #DBDFDF;
+    border-bottom: 1px solid rgba(51, 102, 255, 0.3);
 }
 .left-menubar a:hover {
-    /* color: #4CAF50; */
-    /* background-color: #CCC; */
-    transition: .3s;
-    color: white;
-    text-shadow: 0 -2px 7px #4CAF50, 0 2px 7px #4CAF50, -2px 0 7px #4CAF50, 2px 0 7px #4CAF50;
+    /* transition: .3s; */
+    text-shadow: 0 -2px 7px rgba(51, 102, 255, 0.3), 0 2px 7px rgba(51, 102, 255, 0.3), -2px 0 7px rgba(51, 102, 255, 0.3), 2px 0 7px rgba(51, 102, 255, 0.3);
 }
 
 /* nội dung chính */
