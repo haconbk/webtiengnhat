@@ -91,10 +91,11 @@
     }
     .left-menubar.responsive {
         position: fixed;
+        overflow-x: hidden;
         visibility: visible;
         left: 0;
         top: 0;
-        z-index: 1;
+        z-index: 0;
         transition: .3s;
         width: 250px;
         height: 100%;
@@ -172,7 +173,7 @@
 .left-menubar {
     margin: 0;
     padding: 0;
-    overflow: scroll;
+    /* overflow: scroll; */
 }
 .left-menubar h4 {
     text-align: center;
