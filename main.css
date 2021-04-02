@@ -274,7 +274,9 @@
 
 /* phần trắc nghiệm */
 .quiz_box {
-    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 10px;
     background: #fff;
     border-radius: 5px;
     opacity: 1;
